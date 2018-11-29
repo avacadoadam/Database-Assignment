@@ -104,7 +104,7 @@ CREATE TABLE Appointments (
 )
   ENGINE = InnoDB;
 
-CREATE TABLE Admins (
+CREATE TABLE Admin (
   id     INT AUTO_INCREMENT,
   fname  VARCHAR(20)  NOT NULL,
   lname  VARCHAR(20)  NOT NULL,
@@ -117,7 +117,7 @@ CREATE TABLE Admins (
 
 # Insert
 # Admin
-INSERT INTO `admins` (`id`, `fname`, `lname`, `passwd`, `email`)
+INSERT INTO `admin` (`id`, `fname`, `lname`, `passwd`, `email`)
 VALUES ('1', 'Adam', 'Sever', '5E884898DA28047151D0E56F8DC6292773603D0D6AABBDD62A', 'admin@barber.com');
 # Barber
 INSERT INTO `barber` (`id`, `BarbershopID`, `fname`, `lname`, `email`, `passwd`,`approved`) VALUES
